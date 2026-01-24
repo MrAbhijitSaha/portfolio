@@ -1,0 +1,57 @@
+import { ProjectCardType } from "@/lib/types";
+import { GithubIcon, Link2Icon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
+type ProjectCardPropsType = {
+	data: ProjectCardType;
+};
+
+const ProjectCard = ({ data }: ProjectCardPropsType) => {
+	return (
+		<div className="border-border rounded-lg border transition-all hover:shadow-md">
+			<div className="relative -z-10 aspect-video w-full overflow-hidden">
+				<Image
+					src={`/projects/${data.image}.png`}
+					alt={`Project: ${data.alt}`}
+					fill
+					className="rounded-t-lg border-b object-cover"
+				/>
+			</div>
+			<div className="relative space-y-3 p-4">
+				<div className="absolute end-0 top-0 flex gap-3 px-4 pt-4">
+					<Link
+						href={data.gitlink}
+						target="_blank"
+						rel="noopener noreferrer">
+						<GithubIcon />
+					</Link>
+
+					<Link
+						href={data.hostlink}
+						target="_blank"
+						rel="noopener noreferrer">
+						<Link2Icon />
+					</Link>
+				</div>
+				<div className="pt-3 text-lg font-semibold">{data.name}</div>
+
+				{/* <div className="flex flex-wrap gap-2">
+					{data.skills.map((i) => (
+						<span
+							className="text-primary rounded-full bg-blue-700/20 px-3 py-1 text-sm uppercase"
+							key={i.id}>
+							{i.skill}
+						</span>
+					))}
+				</div> */}
+
+				<div className="text-muted-foreground text-sm">
+					{data.description}
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default ProjectCard;
