@@ -1,22 +1,24 @@
 "use client";
 
+import { userLocationFetchFunction } from "@/lib/fetchApi";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const HomeHero = () => {
-	// const [locationText, setLocationText] = useState("");
+	const [locationText, setLocationText] = useState("");
 
-	// useEffect(() => {
-	// 	userLocationFetchFunction().then(({ data, isSuccess }) => {
-	// 		setLocationText(
-	// 			isSuccess ? `from ${data?.city}, ${data?.region}` : ``,
-	// 		);
-	// 	});
-	// }, []);
+	useEffect(() => {
+		userLocationFetchFunction().then(({ data, isSuccess }) => {
+			setLocationText(
+				isSuccess ? `from ${data?.city}, ${data?.region}` : ``,
+			);
+		});
+	}, []);
 
 	return (
 		<section className="space-y-2">
 			<p className="text-xl">
-				Hey Visitor {"locationText"}
+				Hey Visitor {locationText}
 				<br />
 				<span>I&lsquo;m Abhijit Saha</span>
 			</p>
