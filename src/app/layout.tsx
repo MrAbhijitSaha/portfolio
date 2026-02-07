@@ -18,7 +18,7 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
 			<body className="">
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange>
 					<header className="mx-auto max-w-5xl px-6">
