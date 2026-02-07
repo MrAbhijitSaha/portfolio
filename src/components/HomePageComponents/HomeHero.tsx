@@ -16,27 +16,27 @@ const HomeHero = () => {
 	}, []);
 
 	return (
-		<section className="space-y-2">
-			<p className="text-xl">
+		<section className="grid space-y-2 md:grid-cols-3">
+			<p className="text-sm">
 				Hey Visitor {locationText}
 				<br />
-				<span>I&lsquo;m Abhijit Saha</span>
+				I&lsquo;m <span className="text-primary">Abhijit Saha</span>
 			</p>
 
 			<Image
-				src={"/image.jpg"}
+				src={"/me.png"}
 				alt="My image"
-				width={250}
-				height={200}
-				className="rounded-xl"
+				width={1080}
+				height={720}
+				className="col-end-2 h-auto w-auto rounded-xl"
 			/>
-
-			<p className="">
-				A Kolkata based Fullstack Developer passionate about building
-				responsive, visually stunning web applications. I specialize in
-				React, Next.js, Tailwind CSS, and Shadcn UI to create seamless
-				user experiences with clean, maintainable code.
-			</p>
+			<div className="">
+				<p className="">
+					A <span className="text-primary">Kolkata</span> based
+					Fullstack Developer passionate about building responsive,
+					visually stunning web applications.
+				</p>
+			</div>
 		</section>
 	);
 };
