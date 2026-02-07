@@ -59,6 +59,7 @@ export type ZenQuoteResponseType = ZenQuoteType[];
 export type SkillsType = {
 	id: number;
 	skill: string;
+	img: string;
 };
 
 export type ProjectCardType = {

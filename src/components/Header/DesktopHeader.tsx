@@ -10,7 +10,8 @@ const DesktopHeader = ({ routes }: DesktopHeaderPropsType) => {
 				{routes.map((item) => (
 					<Link
 						href={item.routes}
-						key={item.id}>
+						key={item.id}
+						className="hover:text-primary">
 						{item.Name}
 					</Link>
 				))}

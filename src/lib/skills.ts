@@ -1,50 +1,47 @@
 export const skills = [
+	//  Core Frontend & Frameworks
+	{
+		id: 1,
+		skill: "React",
+		img: "react",
+	},
 	{
 		id: 2,
-		skill: "React",
+		skill: "Next.js",
+		img: "nextjs",
 	},
 	{
 		id: 3,
-		skill: "Next.js",
+		skill: "TypeScript",
+		img: "typescript",
 	},
+
+	//  Styling & UI Components
 	{
 		id: 4,
-		skill: "TypeScript",
+		skill: "Tailwind CSS",
+		img: "tailwind",
 	},
 	{
 		id: 5,
-		skill: "Sql lite",
+		skill: "ShadCN UI",
+		img: "shadcnui",
 	},
 	{
 		id: 6,
-		skill: "Authenticator",
+		skill: "Bootstrap",
+		img: "bootstrap",
 	},
+
+	//  Backend & Authentication
 	{
 		id: 7,
 		skill: "Node.js",
+		img: "nodejs",
 	},
 	{
 		id: 8,
-		skill: "Tailwind CSS",
-	},
-	{
-		id: 9,
-		skill: "Bootstrap",
-	},
-	{
-		id: 10,
-		skill: "ShadCN UI",
-	},
-	{
-		id: 11,
-		skill: "Git",
-	},
-	{
-		id: 12,
-		skill: "Github",
-	},
-	{
-		id: 13,
-		skill: "Vercel",
+		skill: "Better-Auth",
+		img: "betterauth",
 	},
 ];

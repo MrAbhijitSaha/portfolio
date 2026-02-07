@@ -13,32 +13,34 @@ export const metadata: Metadata = {
 
 const page = async () => {
 	return (
-		<>
-			<section className="space-y-8 py-20">
-				<HomeHero />
+		<section className="space-y-8 py-20">
+			{/* user welcome message, my image and about me inside this home hero */}
 
-				<div className="">
-					<p className="text-xl font-semibold underline underline-offset-2">
-						Skills{" "}
-					</p>
+			<HomeHero />
 
+			{/* here a random quote */}
+
+			<div className="space-y-4">
+				<p className="text-xl font-semibold">A quote for you</p>
+
+				<RandomQuotes />
+			</div>
+
+			<section className="space-y-4">
+				<p className="text-xl font-semibold">My tech stack</p>
+
+				<div className="grid grid-cols-2 md:grid-cols-4">
 					{skills.map((data) => (
 						<MySkillsSection
-							key={data.id}
 							data={data}
+							key={data.id}
 						/>
 					))}
 				</div>
-
-				<div className="space-y-4">
-					<p className="text-xl font-semibold underline underline-offset-2">
-						Quotes{" "}
-					</p>
-
-					<RandomQuotes />
-				</div>
 			</section>
-		</>
+
+			{/* <MySoundTrack /> */}
+		</section>
 	);
 };
 
