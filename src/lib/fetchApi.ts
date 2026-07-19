@@ -33,6 +33,7 @@ export const userLocationFetchFunction = async () => {
 		console.error(error);
 
 		return {
+			data: null,
 			isSuccess: false,
 		};
 	}
