@@ -16,12 +16,14 @@ const HomeHero = () => {
 	}, []);
 
 	return (
-		<section className="grid space-y-2 md:grid-cols-3">
-			<p className="text-sm">
-				Hey Visitor {locationText}
-				<br />
-				I&lsquo;m <span className="text-primary">Abhijit Saha</span>
-			</p>
+		<section className="grid gap-6 space-y-2 md:grid-cols-3">
+			<div className="space-y-2 text-sm">
+				<h1 className="">Hey Visitor {locationText}</h1>
+
+				<p>
+					I&lsquo;m <span className="text-primary">Abhijit Saha</span>
+				</p>
+			</div>
 
 			<Image
 				src={"/me.png"}
@@ -30,13 +32,12 @@ const HomeHero = () => {
 				height={720}
 				className="col-end-2 h-auto w-auto rounded-xl"
 			/>
-			<div className="">
-				<p className="">
-					A <span className="text-primary">Kolkata</span> based
-					Fullstack Developer passionate about building responsive,
-					visually stunning web applications.
-				</p>
-			</div>
+
+			<p className="">
+				A <span className="text-primary">Kolkata</span> based Fullstack
+				Developer passionate about building responsive, visually
+				stunning web applications.
+			</p>
 		</section>
 	);
 };
