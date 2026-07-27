@@ -10,7 +10,7 @@ const HomeHero = () => {
 	useEffect(() => {
 		userLocationFetchFunction().then(({ data, isSuccess }) => {
 			setLocationText(
-				isSuccess ? `from ${data?.city}, ${data?.region}` : ``,
+				isSuccess ? `from ${data?.region}, ${data?.country_name}` : ``,
 			);
 		});
 	}, []);

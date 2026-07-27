@@ -25,6 +25,7 @@ export const userLocationFetchFunction = async () => {
 	try {
 		const data = await ky.get(`${env.IP_API}`).json<GeoLocationStateType>();
 
+		console.log(data);
 		return {
 			data: data,
 			isSuccess: true,
