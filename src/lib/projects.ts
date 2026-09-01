@@ -52,6 +52,38 @@ export const projectPageAllProjectData = [
 
 	{
 		id: 2,
+		image: "wallpaper",
+		alt: "Wallpaper WebApp",
+		name: "Wallpaper WebApp",
+		gitlink: "https://github.com/MrAbhijitSaha/wallpaper-webapp",
+		hostlink: "",
+		skills: [
+			{
+				id: "01",
+				skill: "Next.js",
+			},
+			{
+				id: "02",
+				skill: "TypeScript",
+			},
+			{
+				id: "03",
+				skill: "Tailwind CSS",
+			},
+			{
+				id: "04",
+				skill: "Prisma",
+			},
+			{
+				id: "05",
+				skill: "Better Auth",
+			},
+		],
+		description: `A full-stack, responsive wallpaper application built with modern web technologies. This platform features a dynamic masonry grid layout for seamless image browsing, secure user authentication via Better Auth, and robust database integration using Prisma. Crafted with Next.js, TypeScript, and Tailwind CSS, the app delivers a sleek, dark-mode ready interface with optimized image processing and smooth, interactive navigation.`,
+	},
+
+	{
+		id: 3,
 		image: "resturent",
 		alt: "Resturent",
 		name: "Resturent website Clone",

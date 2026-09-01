@@ -1,5 +1,13 @@
 import ProjectCard from "@/components/ProjectPageComponents/ProjectCard";
 import { projectPageAllProjectData } from "@/lib/projects";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Project",
+	description:
+		"Learn more about Abhijit Saha — frontend developer, tech enthusiast, and creative coder from Kolkata.",
+	keywords: ["Abhijit Saha", "frontend developer", "React", "portfolio"],
+};
 
 const page = () => {
 	return (

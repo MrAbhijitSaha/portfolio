@@ -3,12 +3,24 @@ import MobileAndDesktopHeaderSwitch from "@/components/Header/MobileAndDesktopHe
 import ThemeProvider from "@/components/Providers/ThemeProvider";
 import { footerSocialLinks } from "@/lib/footerSocialLinks";
 import { headerRouteOptions } from "@/lib/headerRouteOptions";
+import { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
 
 type RootLayoutPropsType = Readonly<{
 	children: ReactNode;
 }>;
+
+export const metadata: Metadata = {
+	title: {
+		default: "Portfolio | Abhijit Saha",
+		template: "%s | Abhijit Saha",
+	},
+	description:
+		"Learn more about Abhijit Saha — frontend developer, tech enthusiast, and creative coder from Kolkata.",
+	keywords: ["Abhijit Saha", "frontend developer", "React", "portfolio"],
+	
+};
 
 const RootLayout = ({ children }: RootLayoutPropsType) => {
 	return (
