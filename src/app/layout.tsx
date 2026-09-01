@@ -14,7 +14,7 @@ type RootLayoutPropsType = Readonly<{
 export const metadata: Metadata = {
 	title: {
 		default: "Portfolio | Abhijit Saha",
-		template: "%s | Abhijit Saha ",
+		template: "%s | Abhijit Saha",
 	},
 	description:
 		"Learn more about Abhijit Saha — frontend developer, tech enthusiast, and creative coder from Kolkata.",
